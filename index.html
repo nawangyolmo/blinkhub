@@ -95,10 +95,10 @@
                         <div class="hero-sub-head">Getting started is easy!</div>
                         <div class="hero-para">You can discover, monitor & prevent data privacy & compliance issues for 50+ global data privacy regulations</div>
                     </div>
-                    <div class="hero-box">
+                    <!-- <div class="hero-box">
                         <p>You are looking for!</p>
                         <img src="assets/images/icons/arrow-right.svg" alt="">
-                    </div>
+                    </div> -->
                 </div>
                 <div class="hero-cards">
                     <div class="hero-card-1 hero-card">
@@ -123,12 +123,17 @@
                     </div>
                 </div>    
             </div>
-            <div class="data-type">
+
+            <div class="data-flow">
+                Hello user! Let’s get Started
+                <img src="assets/images/flow-1.svg" alt="" id="data-flow-img">
+            </div>
+            <div class="data-type" id="data-type">
                 <div class="data-type-head">Choose your Data type</div>
                 <div class="data-type-item">
                     <div class="data-type-item-head"><p>Git Reporitories</p></div>
                     <div class="data-type-cards-container">
-                        <div class="data-type-card"><img src="assets/images/github.svg" alt=""></div>
+                        <div class="data-type-card" onclick="openGitHubLogIn()"><img src="assets/images/github.svg" alt=""></div>
                         <div class="data-type-card"><img src="assets/images/gitlab.svg" alt=""></div>
                         <div class="data-type-card"><img src="assets/images/git.svg" alt=""></div>
                     </div>
@@ -159,21 +164,26 @@
                 </div>
             </div>
 
-            <div class="url-card">
+            <div class="url-card" id="github-url-card">
                 <div class="url-card-head">
                     Please enter GitHub repository URL, to scan the PII management!
                 </div>
                 <div class="url-card-entry">
                     Enter URL
-                    <div class="url-card-entry-textbox">
-                        <div class="url-card-entry-textbox-prefilled">
-                            <img src="assets/images/github-url.svg" alt="">
+                    <div class="url-card-entry-link">
+                        <div class="url-card-entry-textbox">
+                            <div class="url-card-entry-textbox-prefilled">
+                                <img src="assets/images/github-url.svg" alt="">
+                            </div>
                         </div>
+                        <button class="next-btn" onclick="closeUrl()">
+                            Next
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <div class="regulation">
+            <div class="regulation" id="regulation">
                 <div class="regulation-head">Regulation Types (Open Requests)</div>
                 <div class="regulation-bar">
                     <ul>
@@ -192,7 +202,7 @@
                         <span class="checkmark"></span>
                     </label>
 
-                    <button class="regulation-next-btn">Next</button>
+                    <button class="regulation-next-btn" onclick="closeRegulation()">Next</button>
                 </div>
                 <div class="regulation-type-cards-container">
                     <div class="regulation-type-card"><label class="container">
@@ -249,8 +259,10 @@
                 </div>
             </div>
 
-            <div class="scanning-data">
-                <div class="scanning-data-head">Scanning Data</div>
+            <div class="scanning-data" id="scanning-data">
+                <div class="scanning-data-head">Scanning Data
+                    <button class="next-btn" onclick="scanClose()">Next</button>
+                </div>
                 <div class="scanning-data-content">
                     <div class="scanning-data-top">
                         <div class="scanning-data-analysis"><img src="assets/images/analysing-data.svg" alt=""></div>
@@ -270,7 +282,7 @@
                 </div>
             </div>
 
-            <div class="data-residency">
+            <div class="data-residency" id="data-report">
                 <div class="data-residency-head">Data Residency
                     <div class="data-residency-icons">
                         <img src="assets/images/icons/share.svg" alt="">
@@ -310,6 +322,36 @@
                 </div>
             </div>
         </div>
+
+        <div class="github-login" id="github-login">
+            <div class="github-content">
+                <div class="github-head" id="github-head">Sign in to GitHub to upload your Data</div>
+                <img src="assets/images/github-sub.svg" alt="" id="github-img">
+                <div class="github-card" id="github-card-1">
+                    <div class="github-logo"><img src="assets/images/github-logo.svg" alt=""></div>
+                    <form id="GitHubForm">
+                        <label for="username">Usename or Email ID</label><br>
+                        <input type="text" id="username" name="username" placeholder="example@email.com"><br>
+                        <label for="pwd" >Password</label><br>
+                        <input type="password" id="pwd" name="pwd" placeholder="Enter Your Password">
+                        <input type="submit" value="Login" onclick="gitHubSubmit()">
+                        <!-- <button > Login</button> -->
+                    </form> 
+                    <div class="github-new">New to GitHub? <a href="">SignUp</a></div>
+                    
+                </div>
+
+                <div class="github-card-2" id="github-card-2">
+                    <div class="github-logo-2"><img src="assets/images/github-logo-2.svg" alt=""></div>
+                    <div class="github-content">You have successfully signed in!</div>
+                    <div class="lock"><img src="assets/images/icons/lock-icon.svg" alt=""></div>
+                    <p>You have signed in to GitHub account. Don’t worry your credentials are safe with us.</p>
+                    <button onclick="GitHubClose()">Next</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script src="javascript/script.js"></script>
 </body>
 </html>

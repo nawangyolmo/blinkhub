@@ -232,10 +232,19 @@ border-radius: 16px;
     margin: 0 0 0 20px;
     padding: 20px 0 0 0;
 }
-
+.data-flow{
+    width: 925px;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+    margin: 120px auto 0 auto;
+}
+.data-flow img{
+    margin: 46px 0 0 -34px;
+}
 .data-type{
     width: 925px;
-    margin: 120px auto 0 auto;
+    margin: 100px auto 0 auto;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -285,16 +294,18 @@ border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .url-card{
     width: 925px;
-    margin: 0 auto;
+    margin: 120px auto 0 auto;
     padding: 0 0 24px 0;
     background: #FFFFFF;
     box-shadow: 0px 20.2109px 40.4219px -6.73698px rgba(39, 57, 119, 0.16);
     border-radius: 12px;
     font-family: 'Quicksand', sans-serif;
+    display: none;
 }
 
 .url-card-head{
@@ -313,9 +324,14 @@ border-radius: 16px;
     color: #19191F;
     margin: 16px 0 0 24px;
 }
+
+.url-card-entry-link{
+    display: flex;
+    align-items: center;
+}
 .url-card-entry-textbox{
     margin: 8px 0 0 0;
-    width: 876px;
+    width: 100%;
     height: 42px;
     background: #E9E9F4;
     border-radius: 27px;
@@ -329,12 +345,26 @@ border-radius: 16px;
     align-items: center;
     justify-content: center;
 }
-
+.next-btn{
+    width: 90px;
+    height: 38px;
+    background: #69CA94;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    margin: 0 26px 0 40px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
 .regulation{
     width: 925px;
     height: fit-content;
     margin: 120px auto 0 auto;
     font-family: 'Quicksand', sans-serif;
+    display: none;
 }
 
 .regulation-head{
@@ -518,13 +548,23 @@ border-radius: 16px;
 .scanning-data{
     width: 925px;
     margin: 120px auto;
+    display: none;
 }
 .scanning-data-head{
+    width: 100%;
+    height: 50px;
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
     margin: 0 0 27px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scanning-data-head .next-btn{
+    margin: 0;
 }
 
 .scanning-data-content{
@@ -645,7 +685,8 @@ border-radius: 12px;
 
 .data-residency{
     width: 925px;
-    margin: 0 auto;
+    margin: 120px auto 0 auto;
+    display: none;
 }
 
 .data-residency-head{
@@ -808,4 +849,154 @@ border-radius: 12px;
     margin: 11px 19px 0 0;
     display: flex;
     justify-content: space-between;
+}
+
+.github-login{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(40, 36, 102, 0.7) 0%, rgba(23, 20, 62, 0.7) 100%);
+    backdrop-filter: blur(500px);
+    z-index: 1000;
+    display: none;
+}
+.github-content{
+    width: 328px;
+    height: 612px;
+    margin: 160px auto;
+}
+.github-head{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+
+    /* Off White_Blink Hub */
+
+    color: #FFFFFF;
+}
+
+.github-content > img{
+    margin: 25px 0;
+}
+
+.github-card{
+    /* display: none; */
+    width: 325px;
+    height: 416px;
+    background: #FFFFFF;
+    /* Card 2 */
+
+    box-shadow: 0px 20.2109px 40.4219px -6.73698px rgba(39, 57, 119, 0.16);
+    border-radius: 12px;
+}
+.github-logo{
+    width: 24px;
+    margin: 0 auto;
+    padding: 25px;
+}
+.github-card > form{
+    width: 233px;
+    height: 258px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input[type=text], select ,input[type=password]{
+    background: #E9E9F4;
+    border-radius: 8px;
+    width: 233px;
+    height: 42px;
+    border: none;
+}
+
+input[type=submit]{
+    width: 233px;
+    height: 38px;
+    /* Green_BlinkHub */
+
+    background: #69CA94;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+}
+.github-new{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    color: #19191F;
+    margin: 45px auto 0 auto;
+}
+.github-new a{
+    color: #69CA94;
+    text-decoration: none;
+}
+.github-card-2{
+    position: relative;
+    top: 100px;  
+    visibility: hidden;
+    width: 325px;
+    height: 416px;
+    background: #FFFFFF;
+    /* Card 2 */
+
+    box-shadow: 0px 20.2109px 40.4219px -6.73698px rgba(39, 57, 119, 0.16);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.github-logo-2{
+    margin: 40px auto;
+}
+.github-card-2 .github-content{
+    width: 214px;
+    height: fit-content;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.lock{
+ width: 24px; height: 24px;
+ margin: 42px auto 0 auto;
+}
+
+.github-card-2 p{
+    width: 191px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #9591AF;
+}
+
+.github-card-2 button{
+    width: 90px;
+    height: 38px;
+    background: #69CA94;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    margin: 27px auto;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 20px;
+    font-weight: 700;
+    cursor: pointer;
 }
