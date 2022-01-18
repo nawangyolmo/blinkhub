@@ -1,0 +1,368 @@
+.scanning-data-content{
+    width: 925px;
+    height: 762px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Quicksand';
+}
+
+.scanning-data-top{
+    width: 100%;
+    height: 282px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scanning-data-analysis{
+    height: 100%;
+    width: 220px;
+    border: 0.84px solid #FFFFFF;
+    box-sizing: border-box;
+    /* Card 2 */
+
+    box-shadow: 0px 20.2109px 40.4219px -6.73698px rgba(39, 57, 119, 0.16);
+    border-radius: 16px;
+    background: #F8F8FB;
+}
+
+.scanning-data-analysis-head{
+    width: 180px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 20px auto;
+}
+.scanning-data-analysis-head p{
+    padding: 20px 0 0 0;
+}
+.scanning-data-analysis img{
+    margin: 24px 0 0 -5px;
+}
+
+.quick-scan{
+    width: 106px;
+    margin: -40px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-scan p{
+    margin: 25px 0 0 0;
+}
+
+.scanning-img{
+    width: 210px;
+    height: 210px;
+    display: flex;
+    background: url("assets/images/analysing-bg.png");
+    background-size: contain;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qs-percent{
+    margin: 70px 0 10px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 19px;
+}
+
+.qs-scanning{
+    font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.scanning-data-right{
+    height: 100%;
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scanning-data-right-top{
+    position: relative;
+    width: 100%;
+    height: 134px;
+    background: linear-gradient(107.17deg, #B7B5DC -46.62%, #2D2952 78.98%);
+border-radius: 12px;
+display: flex;
+}
+.scanning-data-right-top img{
+    margin: 21px 0 0 33px;
+}
+.sdrt-content{
+    margin: 25px 0 0 33px;
+}
+.sdrt-head{
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 25px;
+color: #ffffff;
+margin: 0 0 12px 0;
+}
+
+.sdrt-sub{
+    font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #E9E9F4;
+}
+.relax-img{
+    padding: 0 48px 0 0;
+}
+
+.minutes-head, .cloned-head{
+    display: flex;
+    margin: 0 0 0 16px;
+}
+.minutes-time, .cloned-amount{
+    font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+color: #9591AF;
+margin: 14px 0 0 16px;
+}
+
+#minutes-time, #cloned-amount{
+    font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+color: #19191F;
+margin: 0 4px 0 0;
+}
+.scanning-data-right-bottom{
+    width: 100%;
+    height: 106px;
+    display: flex;
+    justify-content: space-between;
+}
+.scanning-data-right-bottom img{
+    margin: 12px 0 0 0;
+}
+.minutes, .files-cloned, .file-category{
+    height: 100%;
+    /* Off White_Blink Hub */
+    
+    background: #FFFFFF;
+    /* Off White_Blink Hub */
+    
+    border: 1px solid #FFFFFF;
+    /* Card 2 */
+    
+    box-shadow: 0px 20.2109px 40.4219px -6.73698px rgba(39, 57, 119, 0.16);
+    border-radius: 16px;
+}
+
+.minutes{
+    width: 173px;
+}
+.minutes-progress-bar, .cloned-progress-bar{
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 1px;
+    background: #E9E9F4;
+}
+.minutes-progress-bar-green{
+    width: 138px;
+    height: 1px;
+    background: #69CA94;
+}
+.cloned-progress-bar-green{
+    width: 204px;
+    height: 1px;
+    background: #69CA94;
+}
+.minutes-estimated, .cloned-estimated{
+    width: 100%;
+    height: 59px;
+    background: #F9F9FD;
+    border-radius: 0px 0px 16px 16px;
+}
+
+.minutes-estimated-head, .cloned-estimated-head{
+    font-weight: 600;
+font-size: 10px;
+line-height: 12px;
+color: #19191F;
+padding: 12px 0 0 16px;
+}
+
+.estimated-time, .cloned-data{
+    font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+color: #5B588F;
+margin: 5px 0 0 16px;
+}
+
+.cloned-estimated-container{
+    width: 214px;
+    display: flex;
+    justify-content: space-between;
+}
+.files-cloned{
+    width: 256px;
+}
+
+.file-category{
+    width: 211px;
+}
+
+.file-category-head{
+    font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+color: #5B588F;
+margin: 12px 0 9px 16px;
+}
+.file-category-data{
+    width: 100%;
+    height: 70px;
+    background: #F9F9FD;
+    border-radius: 0px 0px 16px 16px;
+}
+.file-category-data-container{
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 16px;
+    padding: 14px 0 0 0;
+}
+.file-numbers{
+    font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+color: #19191F;
+}
+
+#file-input{
+    color: #69CA94;
+}
+
+.file-type{
+    font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+color: #9591AF;
+}
+
+.scanning-data-bottom{
+    width: 100%;
+    height: 448px;
+    display: flex;
+    justify-content: space-between;
+}
+.activity{
+    width: 555px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.threats{
+    display: flex;
+    width: 145px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 24px;
+    color: #9591AF;
+    align-items: center;
+    justify-content: space-between;
+}
+.threats-sub{
+    margin: 23px 0 0 0;
+}
+#threats-num{
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+}
+.activity-scanning{
+    display: flex;
+    width: 556px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+#activity-scan{
+    margin: 0;
+}
+#what-is-scanning{
+    font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+
+/* Black_Blinkhub */
+
+color: #19191F;
+}
+#date-and-time{
+    font-weight: 600;
+font-size: 10px;
+line-height: 12px;
+color: #9591AF;
+}
+.scan-box{
+    height: 162px;
+    border-left: 1px solid #69CA94; 
+    margin: 0 0 0 40px;
+}
+.scan-box-inner{
+    width: 341px;
+    height: 65px;
+    background: #E9E9F4;
+border-radius: 12px;
+margin: 0 0 0 37px;
+}
+.scan-box-bottom{
+    height: 89px;
+    width: 321px;
+    border-left: 1px dashed #9591AF;
+    margin: 0 0 0 57px;
+}
+.scan-box-box{
+    width: 298px;
+    height: 72px;
+    background: #E9E9F4;
+border-radius: 12px;
+    position: relative;
+    top: 20px;
+    left: 23px;
+}
+.scanning-data-bottom-left{
+    width: 604px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 20.2109px 40.4219px -6.73698px rgba(39, 57, 119, 0.16);
+    border-radius: 12px;
+}
+
+.scanning-data-bottom-left img{
+    margin: 24px 0 0 24px;
+}
+
+.scanning-data-bottom-right{
+    width: 293px;
+    height: 100%;
+    background: #E9E9F4;
+/* Off White_Blink Hub */
+
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: inset 4px 4px 11px 1px rgba(240, 239, 253, 0.2);
+    border-radius: 12px;
+}
+
+.scanning-data-bottom-right img{
+    margin: 24px 0 0 -18px;
+}

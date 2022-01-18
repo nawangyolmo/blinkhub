@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlinkHub - WIP</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scanning-data.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"></head>
@@ -259,7 +260,7 @@
                 </div>
             </div>
 
-            <div class="scanning-data" id="scanning-data">
+            <!-- <div class="scanning-data" id="scanning-data">
                 <div class="scanning-data-head">Scanning Data
                     <button class="next-btn" onclick="scanClose()">Next</button>
                 </div>
@@ -280,7 +281,165 @@
                         <div class="scanning-data-bottom-right"><img src="assets/images/vulnerabilities.svg" alt=""></div>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="scanning-data" id="scanning-data">
+                <div class="scanning-data-head">Scanning Data
+                    <button class="next-btn" onclick="scanClose()">Next</button>
+                </div>
+                <div class="scanning-data-content">
+                    <div class="scanning-data-top">
+                        <div class="scanning-data-analysis">
+                            <div class="scanning-data-analysis-head">
+                                <img src="assets/images/icons/analysing-icon.svg" alt="">
+                                <p>Analysing your Data</p>
+                            </div>
+                            <div class="scanning-img">
+                                <div class="qs-percent">
+                                    <span id="scan-percent">75</span>%
+                                </div>
+                                <div class="qs-scanning">
+                                    Scanning... <br>
+                                    Almost Done
+                                </div>
+                            </div>
+                            <div class="quick-scan">
+                                <img src="assets/images/icons/quickscan-icon.svg" alt=""> 
+                                <p> Quick Scan</p>
+                            </div>
+                        </div>
+                        <div class="scanning-data-right">
+                            <div class="scanning-data-right-top">
+                                <div class="sdrt-content">
+                                    <div class="sdrt-head">Sit n Relax, while we are scanning your files</div>
+                                    <div class="sdrt-sub">Quick Scan Initiated</div>
+                                </div>
+                                <div class="relax-img"><img src="assets/images/relax-img.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="scanning-data-right-bottom">
+                                <div class="minutes">
+                                    <div class="minutes-head">
+                                        <img src="assets/images/icons/time-icon.svg" alt="">
+                                        <div class="minutes-time">
+                                            <span id="minutes-time">2 mins</span> Left
+                                        </div>
+                                    </div>
+                                    <div class="minutes-progress-bar">
+                                        <div class="minutes-progress-bar-green">
+                                        </div>
+                                    </div>
+                                    <div class="minutes-estimated">
+                                        <div class="minutes-estimated-head">
+                                            Estimated Scan Time
+                                        </div>
+                                        <div class="estimated-time">
+                                            <span id="estimated-time">X:ZZ</span> mins
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="files-cloned">
+                                    <div class="cloned-head">
+                                        <img src="assets/images/icons/files-cloned-icon.svg" alt="">
+                                        <div class="cloned-amount">
+                                            <span id="cloned-amount">45</span> Files Cloned
+                                        </div>
+                                    </div>
+                                    <div class="cloned-progress-bar">
+                                        <div class="cloned-progress-bar-green">
+                                        </div>
+                                    </div>
+                                    <div class="cloned-estimated">
+                                        <div class="cloned-estimated-container">
+                                            <div class="cloned-estimated-item">
+                                                <div class="cloned-estimated-head">
+                                                    File Name
+                                                </div>
+                                                <div class="cloned-data">
+                                                    <span id="cloned-data-file">data.txt</span>
+                                                </div>
+                                            </div>
+                                            <div class="cloned-estimated-item">
+                                                <div class="cloned-estimated-head">
+                                                    Size
+                                                </div>
+                                                <div class="cloned-data">
+                                                    <span id="cloned-data-size">10 MB</span>
+                                                </div>
+                                            </div>
+                                            <div class="cloned-estimated-item">
+                                                <div class="cloned-estimated-head">
+                                                    Source IP
+                                                </div>
+                                                <div class="cloned-data">
+                                                    <span id="cloned-data-ip">100.10.3.2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="file-category">
+                                    <div class="file-category-head">File Categorization</div>
+                                    <div class="file-category-data">
+                                        <div class="file-category-data-container">
+                                            <div class="file-item">
+                                                <div class="file-numbers">
+                                                    <span id="file-input">12</span>/<span id="total-files">15</span>
+                                                </div>
+                                                <div class="file-type">
+                                                    <span id="file-type">Java Script</span>
+                                                </div>
+                                            </div>
+                                            <div class="file-item">
+                                                <div class="file-numbers">
+                                                    <span id="file-input">08</span>/<span id="total-files">15</span>
+                                                </div>
+                                                <div class="file-type">
+                                                    <span id="file-type">Java Script</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scanning-data-bottom">
+                        <div class="scanning-data-bottom-left">
+                            <div class="activity"> <p>Activity</p> 
+                                <div class="threats">
+                                    <img src="assets/images/icons/warning-icon.svg" alt="">
+                                    <div class="threats-sub"><span id="threats-num">18</span> threats detected</div>
+                                </div>
+                            </div>
+                            <div class="activity-scanning">
+                                <img id="activity-scan" src="assets/images/icons/activity-scan-icon.svg" alt="">
+                                <p id="what-is-scanning">S3 Bucket is getting scanned</p>
+                                <p id="date-and-time">14 May 2022 at 2:35 pm</p>   
+                            </div>
+                            <div class="scan-box">
+                                <div class="scan-box-inner"></div>
+                                <div class="scan-box-bottom">
+                                    <div class="scan-box-box">
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-scanning" style="width: 551px;">
+                                <img id="activity-scan" src="assets/images/icons/activity-encryption-icon.svg" alt="">
+                                <p id="what-is-scanning">Bucket encryption modified</p>
+                                <p id="date-and-time">14 May 2022 at 2:35 pm</p>   
+                            </div>
+                            <div class="scan-box" style="height: 130px">
+                                <div class="scan-box-inner" style="width: 502px; height: 113px; background: black;"></div>
+                            </div>
+            
+                        </div>
+                        <div class="scanning-data-bottom-right"><img src="assets/images/vulnerabilities.svg" alt=""></div>
+                    </div>
+                </div>
             </div>
+            
 
             <div class="data-residency" id="data-report">
                 <div class="data-residency-head">Data Residency
