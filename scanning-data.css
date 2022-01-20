@@ -366,3 +366,152 @@ border-radius: 12px;
 .scanning-data-bottom-right img{
     margin: 24px 0 0 -18px;
 }
+.vulnerability-head{
+    margin: 24px 0 19px 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #19191F;
+}
+.vulnerability-cards{
+    width: 256px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.vulnerability-item{
+    width: 100%;
+    height: 83px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 20.2109px 40.4219px -6.73698px rgba(39, 57, 119, 0.16);
+    border-radius: 8px;
+    margin: 0 0 16px 0;
+}
+.vulnerability-item-head{
+    position: relative;
+    top: -20px;
+    left: 16px;
+    display: flex;
+}
+
+.vulnerability-item-head p{
+    padding: 0;
+    margin: 20px 0 0 5px;
+    font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+}
+.vulnerability-bottom{
+    position: relative;
+    top: -16px;
+    width: 100%;
+height: 47px;
+background: #F9F9FD;
+border-radius: 0px 0px 8px 8px;
+}
+.data-residency-top-middle .vulnerability-cards{
+    width: 276px;
+}
+
+.datapoints-bar{
+    width: 248px;
+    height: 25px;
+    background: rgba(233, 233, 244, 0.5);
+border-radius: 29px;
+margin: 35px auto 0 auto;
+}
+
+.datapoints-bar ul li{
+    margin: 0 12px 0 0;
+    padding: 0;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+    color: #5B588F;
+    border-radius: 9px;
+}
+
+.datapoints-active{
+    height: 38px;
+    padding: 0 12px !important;
+    color: white !important;
+    background: #5B588F !important;
+}
+
+.datapoints-graph{
+    margin: 0 auto;
+}
+.top-data-1{
+    width: 170px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 0 49px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.top-data-1  p{
+    margin: 20px 0 0 0;
+}
+
+.top-data-2{
+    width: 138px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto 0 auto;
+    font-size: 14px;
+line-height: 24px;
+font-weight: 700;
+}
+.top-data-2  p{
+    margin: 20px 0 0 0;
+}
+.top-data-wrapper{
+    display: flex;
+    align-items: center;
+}
+.top-data{
+    width: 125px;
+    height: 196px;
+    background: #F9F9FD;
+    border-radius: 0px 16px 16px 0;
+    margin: 47px 0 0 0;
+    /* padding: 14px 0 0 0; */
+}
+
+.top-data-item{
+    height: 36px;
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 5px 0 10px 24px;
+}
+
+.td-name{
+    font-weight: 600;
+font-size: 10px;
+line-height: 12px;
+}
+
+.td-number{
+    font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+color: #5B588F;
+}
+
+.top-data-conic{
+    width: 142px;
+    height: 189.27px;
+    margin: -30px 0 0 -5px;
+}

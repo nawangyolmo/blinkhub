@@ -96,12 +96,15 @@
                         <div class="hero-sub-head">Getting started is easy!</div>
                         <div class="hero-para">You can discover, monitor & prevent data privacy & compliance issues for 50+ global data privacy regulations</div>
                     </div>
+                    <div class="hero-img">
+                        <img src="assets/images/hero-img.svg" alt="">
+                    </div>
                     <!-- <div class="hero-box">
                         <p>You are looking for!</p>
                         <img src="assets/images/icons/arrow-right.svg" alt="">
                     </div> -->
                 </div>
-                <div class="hero-cards">
+                <!-- <div class="hero-cards">
                     <div class="hero-card-1 hero-card">
                         <div class="hero-card-content">
                             <img src="assets/images/discover.svg" alt="">
@@ -122,7 +125,7 @@
                             <img src="assets/images/compliance.svg" alt="">
                         </div>
                     </div>
-                </div>    
+                </div>     -->
             </div>
 
             <div class="data-flow">
@@ -176,10 +179,11 @@
                             <div class="url-card-entry-textbox-prefilled">
                                 <img src="assets/images/github-url.svg" alt="">
                             </div>
+                            <input type="text" name="" id="" placeholder="/Deepaksingh6385">
                         </div>
-                        <button class="next-btn" onclick="closeUrl()">
+                        <!-- <button class="next-btn" onclick="closeUrl()">
                             Next
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>
@@ -203,22 +207,22 @@
                         <span class="checkmark"></span>
                     </label>
 
-                    <button class="regulation-next-btn" onclick="closeRegulation()">Next</button>
+                    <!-- <button class="regulation-next-btn" onclick="closeRegulation()">Next</button> -->
                 </div>
                 <div class="regulation-type-cards-container">
                     <div class="regulation-type-card"><label class="container">
                         <img src="assets/images/california.svg" alt="">
-                        <input type="checkbox">
+                        <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label></div>
                     <div class="regulation-type-card"><label class="container">
                         <img src="assets/images/brazil.svg" alt="">
-                        <input type="checkbox">
+                        <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label></div>
                     <div class="regulation-type-card"><label class="container">
                         <img src="assets/images/switzerland.svg" alt="">
-                        <input type="checkbox">
+                        <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label></div>
                 </div>
@@ -226,17 +230,17 @@
                 <div class="regulation-type-cards-container">
                     <div class="regulation-type-card"><label class="container">
                         <img src="assets/images/china.svg" alt="">
-                        <input type="checkbox">
+                        <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label></div>
                     <div class="regulation-type-card"><label class="container">
                         <img src="assets/images/canada.svg" alt="">
-                        <input type="checkbox">
+                        <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label></div>
                     <div class="regulation-type-card"><label class="container">
                         <img src="assets/images/southafrica.svg" alt="">
-                        <input type="checkbox">
+                        <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label></div>
                 </div>
@@ -244,17 +248,17 @@
                 <div class="regulation-type-cards-container">
                     <div class="regulation-type-card"><label class="container">
                         <img src="assets/images/india.svg" alt="" style="margin-top: 0;">
-                        <input type="checkbox">
+                        <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label></div>
                     <div class="regulation-type-card"><label class="container">
                         <img src="assets/images/iso.svg" alt="" style="margin-top: 4px;">
-                        <input type="checkbox">
+                        <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label></div>
                     <div class="regulation-type-card" style="visibility: hidden;"><label class="container">
                         <img src="assets/images/southafrica.svg" alt="">
-                        <input type="checkbox">
+                        <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label></div>
                 </div>
@@ -285,7 +289,7 @@
 
             <div class="scanning-data" id="scanning-data">
                 <div class="scanning-data-head">Scanning Data
-                    <button class="next-btn" onclick="scanClose()">Next</button>
+                    <!-- <button class="next-btn" onclick="scanClose()">Next</button> -->
                 </div>
                 <div class="scanning-data-content">
                     <div class="scanning-data-top">
@@ -435,14 +439,55 @@
                             </div>
             
                         </div>
-                        <div class="scanning-data-bottom-right"><img src="assets/images/vulnerabilities.svg" alt=""></div>
+                        <div class="scanning-data-bottom-right">
+                            <div class="vulnerability-head">
+                                Vulnerabilities
+                            </div>
+                            <div class="vulnerability-cards">
+                                <div class="vulnerability-item">
+                                    <div class="vulnerability-item-head">
+                                        <img src="assets/images/icons/vulnerability-icon.svg" alt="">
+                                        <p>Masking Required</p>
+                                    </div>
+                                    <div class="vulnerability-item-tag">
+                                    </div>
+                                    <div class="vulnerability-bottom">
+                                        <div class="vulnerability-line"></div>
+                                        <div class="vulnerability-info"></div>
+                                    </div>
+                                </div>
+                                <div class="vulnerability-item">
+                                    <div class="vulnerability-item-head">
+                                        <img src="assets/images/icons/vulnerability-icon.svg" alt="">
+                                        <p>Masking Required</p>
+                                    </div>
+                                    <div class="vulnerability-item-tag">
+                                    </div>
+                                    <div class="vulnerability-bottom">
+                                        <div class="vulnerability-line"></div>
+                                        <div class="vulnerability-info"></div>
+                                    </div>
+                                </div>
+                                <div class="vulnerability-item">
+                                    <div class="vulnerability-item-head">
+                                        <img src="assets/images/icons/vulnerability-icon.svg" alt="">
+                                        <p>Encryption Needed</p>
+                                    </div>
+                                    <div class="vulnerability-item-tag">
+                                    </div>
+                                    <div class="vulnerability-bottom">
+                                        <div class="vulnerability-line"></div>
+                                        <div class="vulnerability-info"></div>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
 
             <div class="data-residency" id="data-report">
-                <div class="data-residency-head">Data Residency
+                <div class="data-residency-head">Ta da! Your report is Ready.
                     <div class="data-residency-icons">
                         <img src="assets/images/icons/share.svg" alt="">
                         <img src="assets/images/icons/link.svg" alt="">
@@ -460,13 +505,232 @@
                 <div class="data-residency-content">
                     <div class="data-residency-top">
                         <div class="data-residency-top-left">
-                            <div class="data-residency-top-left-top"><img src="assets/images/files-scanned.svg" alt=""></div>
-                            <div class="data-residency-top-left-bottom"><img src="assets/images/sensitive-data.svg" alt=""></div>
+                            <div class="data-residency-top-left-top">
+                                    <div class="ds-head">
+                                        <img src="assets/images/icons/files-scanned-icon.svg" alt="">
+                                        <p>Files Scanned</p>
+                                    </div>
+                                    <div class="error-img">
+                                        <div class="ds-errors" id="ds-errors">
+                                            564
+                                        </div>
+                                        <div class="ds-error-score">
+                                            <img src="assets/images/error-score.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="ds-error-bottom">
+                                        <div class="cloned-estimated-container">
+                                            <div class="cloned-estimated-item">
+                                                <div class="cloned-estimated-head">
+                                                    File Name
+                                                </div>
+                                                <div class="cloned-data">
+                                                    <span id="cloned-data-file">data.txt</span>
+                                                </div>
+                                            </div>
+                                            <div class="cloned-estimated-item">
+                                                <div class="cloned-estimated-head">
+                                                    Size
+                                                </div>
+                                                <div class="cloned-data">
+                                                    <span id="cloned-data-size">10 MB</span>
+                                                </div>
+                                            </div>
+                                            <div class="cloned-estimated-item">
+                                                <div class="cloned-estimated-head">
+                                                    Source IP
+                                                </div>
+                                                <div class="cloned-data">
+                                                    <span id="cloned-data-ip">100.10.3.2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="data-residency-top-left-bottom">
+                                <div class="sensitive-data">
+                                    <div class="sensitive-data-head">
+                                        <img src="assets/images/icons/sensitive-data-icon.svg" alt="">
+                                        <p>Sensitive Data</p>
+                                    </div>
+                                    <div class="sensitive-data-item">
+                                        <div class="sd-icon"><img src="assets/images/icons/dev-icon.svg" alt=""></div>
+                                        <div class="sd-content">
+                                            <div class="sd-data">
+                                                <div class="sd-name">Developers Secrets</div>
+                                                <div class="sd-number">72</div>
+                                            </div>
+                                            <div class="sd-bar">
+                                                <div class="sd-bar-filled"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sensitive-data-item">
+                                        <div class="sd-icon"><img src="assets/images/icons/pi-icon.svg" alt=""></div>
+                                        <div class="sd-content">
+                                            <div class="sd-data">
+                                                <div class="sd-name">Personal Information</div>
+                                                <div class="sd-number">40</div>
+                                            </div>
+                                            <div class="sd-bar">
+                                                <div class="sd-bar-filled"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sensitive-data-item">
+                                        <div class="sd-icon"><img src="assets/images/icons/fin-icon.svg" alt=""></div>
+                                        <div class="sd-content">
+                                            <div class="sd-data">
+                                                <div class="sd-name">Financial</div>
+                                                <div class="sd-number">32</div>
+                                            </div>
+                                            <div class="sd-bar">
+                                                <div class="sd-bar-filled"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sensitive-data-item">
+                                        <div class="sd-icon"><img src="assets/images/icons/health-icon.svg" alt=""></div>
+                                        <div class="sd-content">
+                                            <div class="sd-data">
+                                                <div class="sd-name">Healthcare</div>
+                                                <div class="sd-number">50</div>
+                                            </div>
+                                            <div class="sd-bar">
+                                                <div class="sd-bar-filled"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="data-residency-top-middle"><img src="assets/images/vulnerabilities-2.svg" alt=""></div>
+                        <div class="data-residency-top-middle">
+                            <div class="vulnerability-head" style="margin: 24px 0 0 24px;">
+                                Vulnerabilities
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                            </div>
+                            <div class="vulnerability-cards">
+                                <div class="vulnerability-item">
+                                    <div class="vulnerability-item-head">
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </div>
+                                    <div class="vulnerability-item-tag">
+                                    </div>
+                                    <div class="vulnerability-bottom">
+                                        <div class="vulnerability-line"></div>
+                                        <div class="vulnerability-info"></div>
+                                    </div>
+                                </div>
+                                <div class="vulnerability-item">
+                                    <div class="vulnerability-item-head">
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </div>
+                                    <div class="vulnerability-item-tag">
+                                    </div>
+                                    <div class="vulnerability-bottom">
+                                        <div class="vulnerability-line"></div>
+                                        <div class="vulnerability-info"></div>
+                                    </div>
+                                </div>
+                                <div class="vulnerability-item">
+                                    <div class="vulnerability-item-head">
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </div>
+                                    <div class="vulnerability-item-tag">
+                                    </div>
+                                    <div class="vulnerability-bottom">
+                                        <div class="vulnerability-line"></div>
+                                        <div class="vulnerability-info"></div>
+                                    </div>
+                                </div>
+                                <div class="vulnerability-item">
+                                    <div class="vulnerability-item-head">
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </div>
+                                    <div class="vulnerability-item-tag">
+                                    </div>
+                                    <div class="vulnerability-bottom">
+                                        <div class="vulnerability-line"></div>
+                                        <div class="vulnerability-info"></div>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
                         <div class="data-residency-top-right">
-                            <div class="data-residency-top-right-top"><img src="assets/images/top-datapoints.svg" alt=""></div>
-                            <div class="data-residency-top-right-bottom"><img src="assets/images/top-datapoints-2.svg" alt=""></div>
+                            <div class="data-residency-top-right-top">
+                                <div class="top-data-1">
+                                    <img src="assets/images/icons/top-datapoints-icon.svg" alt="">
+                                    <p>Top Datapoints</p> 
+                                </div>
+                                <div class="datapoints-bar">
+                                    <ul>
+                                        <li class="datapoints-active">All Time</li>
+                                        <li>CCPA</li>
+                                        <li>GDPR</li>
+                                        <li>LGPD</li>
+                                        <li>PIPEDA</li>
+                                    </ul>
+                                </div>
+                                <div class="datapoints-graph">
+                                    <img id="datapoints-graph" src="assets/images/datapoints-bar-graph.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="data-residency-top-right-bottom">
+                                <div class="top-data-2">
+                                    <img src="assets/images/icons/top-datapoints-icon-2.svg" alt="">
+                                    <p>Top Datapoints</p>   
+                                </div>
+                                <div class="top-data-wrapper">
+                                    <div class="top-data">
+                                        <div class="top-data-item">
+                                            <div class="td-icon"><img src="assets/images/icons/dev-icon.svg" alt=""></div>
+                                            <div class="td-content">
+                                                <div class="td-data">
+                                                    <div class="td-name">Subject 1</div>
+                                                    <div class="td-number">25%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="top-data-item">
+                                            <div class="td-icon"><img src="assets/images/icons/pi-icon.svg" alt=""></div>
+                                            <div class="td-content">
+                                                <div class="td-data">
+                                                    <div class="td-name">Subject 2</div>
+                                                    <div class="td-number">59%</div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="top-data-item">
+                                            <div class="td-icon"><img src="assets/images/icons/fin-icon.svg" alt=""></div>
+                                            <div class="td-content">
+                                                <div class="td-data">
+                                                    <div class="td-name">Subject 3</div>
+                                                    <div class="td-number">21%</div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="top-data-item">
+                                            <div class="td-icon"><img src="assets/images/icons/health-icon.svg" alt=""></div>
+                                            <div class="td-content">
+                                                <div class="td-data">
+                                                    <div class="td-name">Subject 4</div>
+                                                    <div class="td-number">11%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="top-data-conic">
+                                        <img src="assets/images/Subtract.png" alt="">
+                                    </div>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                     <div class="data-residency-bottom"><img src="assets/images/map.svg" alt=""></div>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlinkHub - WIP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="body-wrapper">
+        <div class="nav-sidebar">
+            <div class="logo"><img src="assets/images/Blinkhub-logo.svg" alt=""></div>
+            <div class="nav-sidebar-options">
+                <div class="nav-sidebar-options-item nav-sidebar-options-item-highlighted">
+                    <div class="nav-sidebar-options-icon nav-sidebar-options-icon-active">
+                        <img src="assets/images/icons/grid.svg" alt="">
+                    </div>
+                    <div class="nav-sidebar-options-item-active"></div>
+                </div>
+                <div class="nav-sidebar-options-item">
+                    <div class="nav-sidebar-options-icon"><img src="assets/images/icons/telescope.svg" alt=""></div>
+                    <div class="nav-sidebar-options-item-active"></div>
+                </div>
+                
+                <div class="nav-sidebar-options-item">
+                    <div class="nav-sidebar-options-icon"><img src="assets/images/icons/dashboard.svg" alt=""></div>
+                    <div class="nav-sidebar-options-item-active"></div>
+                </div>
+                
+                <div class="nav-sidebar-options-item">
+                    <div class="nav-sidebar-options-icon"><img src="assets/images/icons/shield.svg" alt=""></div>
+                    <div class="nav-sidebar-options-item-active"></div>
+                </div>
+                
+                <div class="nav-sidebar-options-item">
+                    <div class="nav-sidebar-options-icon"><img src="assets/images/icons/stack.svg" alt=""></div>
+                    <div class="nav-sidebar-options-item-active"></div>
+                </div>
+                
+                <div class="nav-sidebar-options-item">
+                    <div class="nav-sidebar-options-icon"><img src="assets/images/icons/clipboard.svg" alt=""></div>
+                    <div class="nav-sidebar-options-item-active"></div>
+                </div>
+                
+                <div class="nav-sidebar-options-item">
+                    <div class="nav-sidebar-options-icon"><img src="assets/images/icons/graph.svg" alt=""></div>
+                    <div class="nav-sidebar-options-item-active"></div>
+                </div>
+                
+                <div class="nav-sidebar-options-item">
+                    <div class="nav-sidebar-options-icon"><img src="assets/images/icons/file.svg" alt=""></div>
+                    <div class="nav-sidebar-options-item-active"></div>
+                </div>
+                
+                <div class="nav-sidebar-options-item">
+                    <div class="nav-sidebar-options-icon"><img src="assets/images/icons/help.svg" alt=""></div>
+                    <div class="nav-sidebar-options-item-active"></div>
+                </div>
+                
+            </div>
+            <div class="sign-out">
+                <img src="assets/images/icons/sign-out.svg" alt="">
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="top-bar">
+                <div class="nav-menu-icon">
+                    <img src="assets/images/icons/nav-menu-icon.svg" alt="">
+                </div>
+                <div class="nav-options-wrapper">
+                    <div class="nav-options">
+                        <div class="searchbox">
+                            <div class="search-text">Search</div>
+                            <div class="search-icon"><img src="assets/images/icons/search-icon.svg" alt=""></div>
+    
+                        </div>
+                        <div class="account-options">
+                            <div class="account-img"><img src="assets/images/account-img.svg" alt=""></div>
+                            <div class="account-hello">Hello, Aman</div>
+                            <div class="account-dropdown"><img src="assets/images/icons/arrow-down-icon.svg" alt=""></div>
+                        </div>
+                        <div class="mail-icon"><img src="assets/images/icons/mail-icon.svg" alt=""></div>
+                        <div class="bell-icon"><img src="assets/images/icons/bell-icon.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero">
+                <div class="hero-container">
+                    <div class="hero-text">
+                        <div class="hero-head">Welcome to BlinkHub.</div>
+                        <div class="hero-sub-head">Getting started is easy!</div>
+                        <div class="hero-para">You can discover, monitor & prevent data privacy & compliance issues for 50+ global data privacy regulations</div>
+                    </div>
+                    <!-- <div class="hero-box">
+                        <p>You are looking for!</p>
+                        <img src="assets/images/icons/arrow-right.svg" alt="">
+                    </div> -->
+                </div>
+                <div class="hero-cards">
+                    <div class="hero-card-1 hero-card">
+                        <div class="hero-card-content">
+                            <img src="assets/images/discover.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="hero-card-2 hero-card">
+                        <div class="hero-card-content">
+                            <img src="assets/images/monitor.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="hero-card-3 hero-card">
+                        <div class="hero-card-content">
+                            <img src="assets/images/prevent.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="hero-card-4 hero-card">
+                        <div class="hero-card-content">
+                            <img src="assets/images/compliance.svg" alt="">
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="data-flow">
+                Hello user! Let’s get Started
+                <img src="assets/images/flow-1.svg" alt="" id="data-flow-img">
+            </div>
+            <div class="data-type" id="data-type">
+                <div class="data-type-head">Choose your Data type</div>
+                <div class="data-type-item">
+                    <div class="data-type-item-head"><p>Git Reporitories</p></div>
+                    <div class="data-type-cards-container">
+                        <div class="data-type-card" onclick="openGitHubLogIn()"><img src="assets/images/github.svg" alt=""></div>
+                        <div class="data-type-card"><img src="assets/images/gitlab.svg" alt=""></div>
+                        <div class="data-type-card"><img src="assets/images/git.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="data-type-item">
+                    <div class="data-type-item-head"><p>Databases - RDMS (Structured Data)</p></div>
+                    <div class="data-type-cards-container">
+                        <div class="data-type-card"><img src="assets/images/mssql.svg" alt=""></div>
+                        <div class="data-type-card"><img src="assets/images/mysql.svg" alt=""></div>
+                        <div class="data-type-card"><img src="assets/images/oracledb.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="data-type-item">
+                    <div class="data-type-item-head"><p>Databases - NoSQL (Unstructured Data)</p></div>
+                    <div class="data-type-cards-container">
+                        <div class="data-type-card"><img src="assets/images/mongodb.svg" alt=""></div>
+                        <div class="data-type-card"><img src="assets/images/dynamodb.svg" alt=""></div>
+                        <div class="data-type-card"><img src="assets/images/neo4j.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="data-type-item">
+                    <div class="data-type-item-head"><p>System - files, logs and tools and processes</p></div>
+                    <div class="data-type-cards-container">
+                        <div class="data-type-card"><img src="assets/images/csv.svg" alt=""></div>
+                        <div class="data-type-card"><img src="assets/images/txt.svg" alt=""></div>
+                        <div class="data-type-card"><img src="assets/images/other.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="url-card" id="github-url-card">
+                <div class="url-card-head">
+                    Please enter GitHub repository URL, to scan the PII management!
+                </div>
+                <div class="url-card-entry">
+                    Enter URL
+                    <div class="url-card-entry-link">
+                        <div class="url-card-entry-textbox">
+                            <div class="url-card-entry-textbox-prefilled">
+                                <img src="assets/images/github-url.svg" alt="">
+                            </div>
+                        </div>
+                        <button class="next-btn" onclick="closeUrl()">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="regulation" id="regulation">
+                <div class="regulation-head">Regulation Types (Open Requests)</div>
+                <div class="regulation-bar">
+                    <ul>
+                        <li class="regulation-active">All Time</li>
+                        <li>CCPA</li>
+                        <li>GDPR</li>
+                        <li>LGPD</li>
+                        <li>PIPEDA</li>
+                    </ul>
+                </div>
+
+                <div class="regulation-checkbox-head">Choose the Security laws</div>
+                <div class="regulation-checkbox-selection">
+                    <label class="container">Select all
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <button class="regulation-next-btn" onclick="closeRegulation()">Next</button>
+                </div>
+                <div class="regulation-type-cards-container">
+                    <div class="regulation-type-card"><label class="container">
+                        <img src="assets/images/california.svg" alt="">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label></div>
+                    <div class="regulation-type-card"><label class="container">
+                        <img src="assets/images/brazil.svg" alt="">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label></div>
+                    <div class="regulation-type-card"><label class="container">
+                        <img src="assets/images/switzerland.svg" alt="">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label></div>
+                </div>
+
+                <div class="regulation-type-cards-container">
+                    <div class="regulation-type-card"><label class="container">
+                        <img src="assets/images/china.svg" alt="">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label></div>
+                    <div class="regulation-type-card"><label class="container">
+                        <img src="assets/images/canada.svg" alt="">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label></div>
+                    <div class="regulation-type-card"><label class="container">
+                        <img src="assets/images/southafrica.svg" alt="">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label></div>
+                </div>
+
+                <div class="regulation-type-cards-container">
+                    <div class="regulation-type-card"><label class="container">
+                        <img src="assets/images/india.svg" alt="" style="margin-top: 0;">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label></div>
+                    <div class="regulation-type-card"><label class="container">
+                        <img src="assets/images/iso.svg" alt="" style="margin-top: 4px;">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label></div>
+                    <div class="regulation-type-card" style="visibility: hidden;"><label class="container">
+                        <img src="assets/images/southafrica.svg" alt="">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label></div>
+                </div>
+            </div>
+
+            <div class="scanning-data" id="scanning-data">
+                <div class="scanning-data-head">Scanning Data
+                    <button class="next-btn" onclick="scanClose()">Next</button>
+                </div>
+                <div class="scanning-data-content">
+                    <div class="scanning-data-top">
+                        <div class="scanning-data-analysis"><img src="assets/images/analysing-data.svg" alt=""></div>
+                        <div class="scanning-data-right">
+                            <div class="scanning-data-right-top"><img src="assets/images/sit-relax.svg" alt=""></div>
+                            <div class="scanning-data-right-bottom">
+                                <div class="minutes"><img src="assets/images/minutes.svg" alt=""></div>
+                                <div class="files-cloned"><img src="assets/images/files-cloned.svg" alt=""></div>
+                                <div class="file-category"><img src="assets/images/file-category.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scanning-data-bottom">
+                        <div class="scanning-data-bottom-left"><img src="assets/images/activity.svg" alt=""></div>
+                        <div class="scanning-data-bottom-right"><img src="assets/images/vulnerabilities.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-residency" id="data-report">
+                <div class="data-residency-head">Data Residency
+                    <div class="data-residency-icons">
+                        <img src="assets/images/icons/share.svg" alt="">
+                        <img src="assets/images/icons/link.svg" alt="">
+                        <img src="assets/images/icons/download.svg" alt="">
+                    </div>
+                </div>
+                <div class="regulation-bar">
+                    <ul>
+                        <li class="regulation-active">Summary</li>
+                        <li>Sensitive Data</li>
+                        <li>Compliances</li>
+                        <li>Remediations</li>
+                    </ul>
+                </div>
+                <div class="data-residency-content">
+                    <div class="data-residency-top">
+                        <div class="data-residency-top-left">
+                            <div class="data-residency-top-left-top"><img src="assets/images/files-scanned.svg" alt=""></div>
+                            <div class="data-residency-top-left-bottom"><img src="assets/images/sensitive-data.svg" alt=""></div>
+                        </div>
+                        <div class="data-residency-top-middle"><img src="assets/images/vulnerabilities-2.svg" alt=""></div>
+                        <div class="data-residency-top-right">
+                            <div class="data-residency-top-right-top"><img src="assets/images/top-datapoints.svg" alt=""></div>
+                            <div class="data-residency-top-right-bottom"><img src="assets/images/top-datapoints-2.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="data-residency-bottom"><img src="assets/images/map.svg" alt=""></div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-trademark">2021 © BlinkHub</div>
+                <div class="footer-options">
+                    <p>About</p>
+                    <p>Support</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="github-login" id="github-login">
+            <div class="github-content">
+                <div class="github-head" id="github-head">Sign in to GitHub to upload your Data</div>
+                <img src="assets/images/github-sub.svg" alt="" id="github-img">
+                <div class="github-card" id="github-card-1">
+                    <div class="github-logo"><img src="assets/images/github-logo.svg" alt=""></div>
+                    <form id="GitHubForm">
+                        <label for="username">Usename or Email ID</label><br>
+                        <input type="text" id="username" name="username" placeholder="example@email.com"><br>
+                        <label for="pwd" >Password</label><br>
+                        <input type="password" id="pwd" name="pwd" placeholder="Enter Your Password">
+                        <input type="submit" value="Login" onclick="gitHubSubmit()">
+                        <!-- <button > Login</button> -->
+                    </form> 
+                    <div class="github-new">New to GitHub? <a href="">SignUp</a></div>
+                    
+                </div>
+
+                <div class="github-card-2" id="github-card-2">
+                    <div class="github-logo-2"><img src="assets/images/github-logo-2.svg" alt=""></div>
+                    <div class="github-content">You have successfully signed in!</div>
+                    <div class="lock"><img src="assets/images/icons/lock-icon.svg" alt=""></div>
+                    <p>You have signed in to GitHub account. Don’t worry your credentials are safe with us.</p>
+                    <button onclick="GitHubClose()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

@@ -21,7 +21,7 @@ GitHubForm.addEventListener("submit", (e) => {
 function GitHubClose(){
     var github = document.getElementById("github-login");
     github.style.display = "none";
-    document.getElementById("data-type").style.display = "none";
+    // document.getElementById("data-type").style.display = "none";
     document.getElementById("github-url-card").style.display = "block";
     document.getElementById("data-flow-img").src = "assets/images/flow-2.svg";
     document.getElementById("data-flow-img").style.margin = "46px 0 0 -25px";
@@ -29,21 +29,21 @@ function GitHubClose(){
 }
 
 function closeUrl(){
-    document.getElementById("github-url-card").style.display = "none";
+    // document.getElementById("github-url-card").style.display = "none";
     document.getElementById("regulation").style.display = "block";
     document.getElementById("data-flow-img").src = "assets/images/flow-3.svg";
     document.getElementById("data-flow-img").style.margin = "46px 0 0 -25px";
 }
 
 function closeRegulation(){
-    document.getElementById("regulation").style.display = "none";
+    // document.getElementById("regulation").style.display = "none";
     document.getElementById("scanning-data").style.display = "block";
     document.getElementById("data-flow-img").src = "assets/images/flow-4.svg";
     document.getElementById("data-flow-img").style.margin = "46px 0 0 -25px";
 }
 
 function scanClose(){
-    document.getElementById("scanning-data").style.display = "none";
+    // document.getElementById("scanning-data").style.display = "none";
     document.getElementById("data-report").style.display = "block";
     document.getElementById("data-flow-img").src = "assets/images/flow-5.svg";
     document.getElementById("data-flow-img").style.margin = "46px 0 0 -25px";
